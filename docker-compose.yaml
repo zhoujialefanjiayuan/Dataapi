@@ -1,0 +1,12 @@
+version: '2.4'
+services:
+  http:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      env: dep
+    ports:
+      - "1180:1180"
+    command: gunicorn -b 0.0.0.0:1180 -k gevent --workers 2 --threads 8 manager:app
