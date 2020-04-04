@@ -1,10 +1,5 @@
 from api.http_client_advance import OpenApiClient
 
-access_key = '2ebd033a70b02d01'
-secret_key = '1551029ddabd62a8'
-api_host = 'https://api.advance.ai'
-advancd_request = OpenApiClient(api_host=api_host, access_key=access_key, secret_key=secret_key)
-
 def parse_response(re):
     print('advance',re)
     if re.get('code') == "SUCCESS":
