@@ -2,8 +2,8 @@
 from api import izi
 
 
-secretKey="fHhUCQgTlpFKuiAhFnTBtsGpSFTZyOWwaUbGVgGk"
-accessKey="DjEVvsmbeCZTkuhfPfNf"
+secretKey=
+accessKey=
 api = izi.client(accessKey, secretKey)
 
 def parse_response(re):
