@@ -6,8 +6,6 @@ import requests
 
 from app.error import RETRY_LATER
 
-keyid="3xdZX3hss3VTAUpqkI65uZ"
-keySecret="6bXXAboxJaNdDJ2O99j6G2"
 
 
 def signRequest(algorithm, secret, timestamp, httpMethod, originalUrl, httpBody):
